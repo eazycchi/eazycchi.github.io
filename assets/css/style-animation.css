@@ -6,9 +6,11 @@
 }
 
 #fadeGambar {
+    position: relative;
+    top: -50%;
     scale: 50%;
     animation-name: fadeinGambar;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
