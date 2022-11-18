@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mochamad Izza Zulfikar Sya'roni</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
     <!-- framework tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -33,7 +36,7 @@
                     <!-- Website Logo -->
                     <div>
                         <a href="https://eazycchi.github.io/" class="flex items-center py-4 px-2">
-                            <img src="assets/img/LogoMochi.png" alt="Logo" class="h-8 w-8 mr-2" />
+                            <img src="assets/img/LogoMochi.svg" alt="Logo" class="h-8 w-8 mr-2" />
                             <span class="dark:text-white font-semibold text-gray-500 text-lg">mochizzazs_</span>
                         </a>
                     </div>
@@ -57,7 +60,9 @@
                     </button>
                 </div>
             </div>
+            <img class="-z-50" id="fadeGambar" src="/assets/img/LogoMochi.svg" alt="">
         </div>
+
 
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
@@ -70,6 +75,7 @@
             </ul>
         </div>
 
+
         <!-- script toggle mobile -->
         <script>
             const btn = document.querySelector("button.mobile-menu-button");
@@ -79,7 +85,9 @@
                 menu.classList.toggle("hidden");
             });
         </script>
+
     </nav>
+
 
     <!-- body -->
     <div id="content"></div>
