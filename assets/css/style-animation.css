@@ -1,0 +1,38 @@
+#fadeNama {
+    position: relative;
+    animation-name: fadeinNama;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#fadeGambar {
+    scale: 50%;
+    animation-name: fadeinGambar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeinNama {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+
+    }
+}
+
+@keyframes fadeinGambar {
+    0% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 25%;
+    }
+}

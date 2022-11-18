@@ -6,136 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mochamad Izza Zulfikar Sya'roni</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- framework tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- jquery -->
+    <!-- cdn framework jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
-    <!-- script -->
-    <script>
-        $(document).ready(function () {
-            $('#content').load('components/aboutMe.php');
+    <!-- customized script -->
+    <script src="assets/js/script.js"></script>
 
-            $('.menu').click(function (e) {
-                e.preventDefault();
-
-                var menu = $(this).attr('id');
-
-                if (menu == "menuTentang") {
-                    $('.block').removeClass(
-                        'py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'
-                    );
-                    $(this).addClass(
-                        'py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'
-                    );
-                    $('#content').load('components/aboutMe.php');
-                } else if (menu == "menuProject") {
-                    $('.block').removeClass(
-                        'py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'
-                    );
-                    $(this).addClass(
-                        'py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'
-                    );
-                    $('#content').load('components/project.php');
-                }
-            });
-        });
-    </script>
-
-    <!-- style animation -->
-    <style>
-        #fadeNama {
-            position: relative;
-            animation-name: fadeinNama;
-            animation-duration: 3s;
-            animation-fill-mode: forwards;
-        }
-
-        #fadeGambar {
-            position: relative;
-            height: 680px;
-            animation-name: fadeinGambar;
-            animation-duration: 2s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes fadeinNama {
-            0% {
-                left: 0px;
-                top: -50px;
-                opacity: 0%;
-            }
-
-            100% {
-                left: 100px;
-                top: -50px;
-                opacity: 100%;
-
-            }
-        }
-
-        @keyframes fadeinGambar {
-            0% {
-                right: 100px;
-                bottom: 0px;
-                opacity: 0%;
-            }
-
-            100% {
-                right: -75px;
-                bottom: 0px;
-                opacity: 100%;
-                size: 80px;
-
-            }
-        }
-    </style>
+    <!-- customized style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-animation.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="relative bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-        <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="https://github.com/eazycchi/eazycchi.github.io" class="flex items-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="mr-3 h-6 sm:h-9"
-                    alt="Flowbite Logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">mochizzazs_</span>
-            </a>
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <a href="" id="menuTentang"
-                            class="menu block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                            aria-current="page">Tentang</a>
-                    </li>
-                    <li>
-                        <a href="" id="menuProject"
-                            class="menu block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Project</a>
-                    </li>
-                </ul>
+    <!-- top navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <!-- Website Logo -->
+                    <div>
+                        <a href="https://eazycchi.github.io/" class="flex items-center py-4 px-2">
+                            <img src="assets/img/LogoMochi.png" alt="Logo" class="h-8 w-8 mr-2" />
+                            <span class="font-semibold text-gray-500 text-lg">mochizzazs_</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navbar items -->
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <a href="" id="menuTentang"
+                        class="menu py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold hover:text-green-500 transition duration-300">Tentang</a>
+                    <a href="" id="menuProject"
+                        class="menu py-4 px-2 font-semibold hover:text-green-500 transition duration-300">Project</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
+
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a href="" id="menuTentang-mobile"
+                        class="menu block text-sm px-2 py-4 text-white bg-green-500 font-semibold hover:bg-green-500 transition duration-300">Tentang</a>
+                </li>
+                <li><a href="" id="menuProject-mobile"
+                        class="menu block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Project</a></li>
+            </ul>
+        </div>
+
+        <!-- script toggle mobile -->
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
     </nav>
 
     <!-- body -->
     <div id="content"></div>
 </body>
+
 
 </html>
