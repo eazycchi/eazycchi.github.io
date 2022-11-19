@@ -7,10 +7,8 @@
 
 #fadeGambar {
     position: absolute;
-
-
-    top: -155%;
-    left: 20%;
+    top: -150%;
+    left: 19%;
     scale: 20%;
     animation-name: fadeinGambar;
     animation-duration: 6s;
@@ -19,22 +17,23 @@
 
 #fadeAbout {
 
-    position: absolute;
-    top: -100%;
-    scale: 25%;
+    position: fixed;
+    top: -75%;
+    left: 5%;
+    scale: 15%;
     animation-name: fadeinGambar;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
 #fadeAbout2 {
 
-    position: absolute;
+    position: fixed;
     top: -100%;
     left: 40%;
     scale: 10%;
     animation-name: fadeinGambar;
-    animation-duration: 6s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -51,18 +50,14 @@
 
 @keyframes fadeinGambar {
     0% {
-        opacity: 5%;
+        opacity: 1%;
     }
 
-    45% {
-        opacity: 100%;
-    }
-
-    55% {
+    70% {
         opacity: 100%;
     }
 
     100% {
-        opacity: 5%;
+        opacity: 1%;
     }
 }
